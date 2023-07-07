@@ -13,15 +13,19 @@
   <body>
     <main>
       <header>
-        <a href="./index.html"
-          ><img
-            class="logo"
-            src="Assets/EcoGuard Logo.png"
-            alt=""
-            width="70rem"
-            title="Home"
-        /></a>
-        <div class="navItems"><i class="fa-regular fa-user"></i></div>
+        <div class="navLogo">
+          <a href="./index.html"
+            ><img
+              class="logo"
+              src="Assets/EcoGuard Logo.png"
+              alt=""
+              width="70rem"
+              title="Home"
+          /></a>
+        </div>
+        <div class="navItems">
+          <i class="fa-regular fa-user fa-2xl" style="color: #7ed957"></i>
+        </div>
       </header>
       <h1>OUR SERVICES</h1>
       <section>
@@ -38,10 +42,10 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 at est orci. Nam molestie pellentesque mi nec lacinia.
               </p>
-              <a class="button">Button</a>
+              <button class="button">Proceed</button>
             </div>
           </div>
-          <div class="card-border"></div>
+          <!-- <div class="card-border"></div> -->
         </div>
 
         <div class="container">
@@ -54,40 +58,61 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 at est orci. Nam molestie pellentesque mi nec lacinia.
               </p>
-              <a class="button">Button</a>
+              <button class="button">Proceed</button>
             </div>
           </div>
-          <div class="card-border"></div>
-        </div>
-        <div class="container">
-          <div class="card">
-            <p class="title">Card title</p>
-            <div class="card-hidden">
-              <p class="title-in">Card title</p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                at est orci. Nam molestie pellentesque mi nec lacinia.
-              </p>
-              <a class="button">Button</a>
-            </div>
-          </div>
-          <div class="card-border"></div>
+          <!-- <div class="card-border"></div> -->
         </div>
 
         <div class="container">
           <div class="card">
-            <p class="title">Card title</p>
+            <img src="Assets/44956059-removebg-preview.png" alt="" />
+            <p class="title">Wallet</p>
             <div class="card-hidden">
-              <p class="title-in">Card title</p>
+              <p class="title-in">View Balance & Rewards</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                at est orci.
+              </p>
+              <button class="button">Proceed</button>
+            </div>
+          </div>
+          <!-- <div class="card-border"></div> -->
+        </div>
+
+        <div class="container">
+          <div class="card">
+            <img src="Assets/45949220-removebg-preview.png" alt="" />
+            <p class="title">Schedule History</p>
+            <div class="card-hidden">
+              <p class="title-in">View History</p>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 at est orci. Nam molestie pellentesque mi nec lacinia.
               </p>
-              <a class="button">Button</a>
+              <button class="button">Proceed</button>
             </div>
           </div>
-          <div class="card-border"></div>
+          <!-- <div class="card-border"></div> -->
         </div>
+      </section>
+
+      <section class="formContainer">
+        <form class="form">
+          <span class="input-span">
+            <label for="email" class="label">Email</label>
+            <input type="email" name="email" id="email"
+          /></span>
+          <span class="input-span">
+            <label for="password" class="label">Password</label>
+            <input type="password" name="password" id="password"
+          /></span>
+          <span class="span"><a href="#">Forgot password?</a></span>
+          <input class="submit" type="submit" value="Log in" />
+          <span class="span"
+            >Don't have an account? <a href="#">Sign up</a></span
+          >
+        </form>
       </section>
     </main>
   </body>
