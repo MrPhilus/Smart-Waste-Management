@@ -1,0 +1,35 @@
+.scheduleTitle img {
+  width: 12rem;
+}
+.scheduleTitle h1 {
+  font-size: 4vmax;
+}
+.scheduleTitle {
+  text-align: center;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.altButton {
+  border: none;
+  outline: none;
+  background-color: #628c23;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px #5b5b5b;
+  margin-top: 1.3rem;
+}
+
+button:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #5b5b5b;
+}

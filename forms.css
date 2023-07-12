@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@100;400;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin: 2rem;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.29);
+}
+.formImage img {
+  width: 30vmax;
+}
+form {
+  /* --bg-light: #efefef;
+    --bg-dark: #707070;
+    --clr: #58bc82;
+    --clr-alpha: #9c9c9c60; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 30vmax;
+  font-size: 2vmax;
+}
+
+.form .input-span {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.5vmax;
+}
+
+form input[type="text"],
+form input[type="time"],
+form input[type="week"],
+form input[type="password"],
+form input[type="tel"] {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #9c9c9c60;
+  outline: 2px solid #707070;
+}
+
+form input[type="text"]:focus,
+form input[type="time"]:focus,
+form input[type="week"]:focus,
+form input[type="password"]:focus,
+form input[type="tel"]:focus {
+  outline: 2px solid #7ed957;
+}
+
+.label {
+  align-self: flex-start;
+  color: #7ed957;
+  font-weight: 600;
+}
+.submit {
+  padding: 8px;
+  border-radius: 24px;
+  border: none;
+  font-weight: 600;
+  background-color: #628c23;
+  color: white;
+  outline: none;
+  margin-top: 0.8rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #395412;
+}
+
+form a {
+  text-decoration: none;
+}
+
+.span {
+  text-decoration: none;
+  color: #707070;
+}
+
+.span a {
+  color: #7ed957;
+}
+.logo {
+  margin: 1rem;
+}

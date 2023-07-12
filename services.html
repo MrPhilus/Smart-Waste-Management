@@ -24,11 +24,29 @@
           /></a>
         </div>
         <div class="navItems">
-          <i class="fa-regular fa-user fa-2xl" style="color: #7ed957"></i>
+          <div class="dropdown">
+            <i
+              id="userIcon"
+              class="fa-regular fa-user fa-2xl"
+              style="color: #7ed957"
+            ></i>
+            <div class="dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">Settings</a>
+              <a id="logStatus" href="./Forms.html">Log In</a>
+            </div>
+          </div>
+          <!-- <a href="Forms.html">
+            <i
+              id="userIcon"
+              class="fa-regular fa-user fa-2xl"
+              style="color: #7ed957"
+            ></i>
+          </a> -->
         </div>
       </header>
       <h1>OUR SERVICES</h1>
-      <section>
+      <section class="services">
         <div class="container">
           <div class="card">
             <img
@@ -42,10 +60,10 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 at est orci. Nam molestie pellentesque mi nec lacinia.
               </p>
-              <button class="button">Proceed</button>
+              <button id="disposal" class="button">Proceed</button>
             </div>
           </div>
-          <!-- <div class="card-border"></div> -->
+          <span class="error"></span>
         </div>
 
         <div class="container">
@@ -58,10 +76,10 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 at est orci. Nam molestie pellentesque mi nec lacinia.
               </p>
-              <button class="button">Proceed</button>
+              <button id="recycle" class="button">Proceed</button>
             </div>
           </div>
-          <!-- <div class="card-border"></div> -->
+          <span class="error"></span>
         </div>
 
         <div class="container">
@@ -74,10 +92,10 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 at est orci.
               </p>
-              <button class="button">Proceed</button>
+              <button id="wallet" class="button">Coming Soon</button>
             </div>
           </div>
-          <!-- <div class="card-border"></div> -->
+          <span class="error"></span>
         </div>
 
         <div class="container">
@@ -90,30 +108,14 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 at est orci. Nam molestie pellentesque mi nec lacinia.
               </p>
-              <button class="button">Proceed</button>
+              <button id="history" class="button">Proceed</button>
             </div>
           </div>
-          <!-- <div class="card-border"></div> -->
+          <span class="error"></span>
         </div>
       </section>
-
-      <section class="formContainer">
-        <form class="form">
-          <span class="input-span">
-            <label for="email" class="label">Email</label>
-            <input type="email" name="email" id="email"
-          /></span>
-          <span class="input-span">
-            <label for="password" class="label">Password</label>
-            <input type="password" name="password" id="password"
-          /></span>
-          <span class="span"><a href="#">Forgot password?</a></span>
-          <input class="submit" type="submit" value="Log in" />
-          <span class="span"
-            >Don't have an account? <a href="#">Sign up</a></span
-          >
-        </form>
-      </section>
     </main>
+
+    <script src="./services.js"></script>
   </body>
 </html>

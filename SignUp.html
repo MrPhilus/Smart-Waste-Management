@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="forms.css" />
+    <script
+      src="https://kit.fontawesome.com/8b463f7cca.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>EcoGuard</title>
+  </head>
+  <header>
+    <div class="navLogo">
+      <a href="./index.html"
+        ><img
+          class="logo"
+          src="Assets/EcoGuard Logo.png"
+          alt=""
+          width="70rem"
+          title="Home"
+      /></a>
+    </div>
+  </header>
+  <main>
+    <section class="formImage">
+      <img src="Assets/28127401.jpg" alt="" width="500rem" />
+    </section>
+    <section class="formContainer">
+      <form class="form">
+        <span class="input-span">
+          <label for="email" class="label">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="example@email.com"
+        /></span>
+        <span class="input-span">
+          <label for="tel" class="label">Phone Number (Nigeria)</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            pattern="{1}[0-9]{3}[0-9]{10}"
+            placeholder="234XXXXXXXXXX"
+            required
+          />
+        </span>
+
+        <span class="input-span">
+          <label for="password" class="label">Password</label>
+          <input type="password" name="password" id="password" />minimum of 8
+          characters,capital letters, numbers and symbols inclusive</span
+        >
+        <span class="input-span">
+          <label for="password" class="label">Repeat Password</label>
+          <input type="password" name="password" id="passWord"
+        /></span>
+        <span class="span"
+          >Already have an account? <a href="Forms.html">Log In</a></span
+        >
+
+        <a href="Forms.html"><button class="submit">Sign Up</button></a>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</html>
