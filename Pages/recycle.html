@@ -40,8 +40,8 @@
   <main>
     <section class="formContainer">
       <article class="scheduleTitle">
-        <h1>Pick-Up Request</h1>
-        <img src="../Assets/garbage-truck-in-green-color-with-trash-bag-vector-46239142-removebg-preview.png" alt="">
+        <h1>Recycling Pick-Up Request</h1>
+        <img src="../Assets/25888333-removebg-preview.png" alt="">
         <h3>Pick a date and time convenient for you</h3>
       </article>
       <form class="form">
@@ -65,32 +65,33 @@
         />Pick-Up Hours are 8 AM to 5PM</span>
 
         <span class="input-span">
-          <label class="label">Request Bin</label>
-          <div class="radioButtons">
-            <label for="request-yes">
-              <input type="radio" name="request-bin" id="request-yes" value="yes" onclick="showQuantityField()" /> Yes
-            </label>
-            <label for="request-no">
-              <input type="radio" name="request-bin" id="request-no" value="no" onclick="hideQuantityField()" /> No
-            </label>
-          </div>
-        </span>
-         
-    <span class="input-span" id="quantity-field" style="display: none;">
-      <label for="quantity" class="label">Quantity</label>
-      <select name="quantity" id="quantity">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-      </select>
-    </span>
-       
+            <label class="label">Type of Waste to be Recycled</label>
+            <div class="wasteType">
+              <label for="plastic">
+                <input type="checkbox" name="waste-type" id="plastic" value="plastic" />
+                Plastic
+              </label>
+              <label for="paper">
+                <input type="checkbox" name="waste-type" id="paper" value="paper" />
+                Cartons
+              </label>
+              <label for="metal">
+                <input type="checkbox" name="waste-type" id="metal" value="metal" />
+                Metal
+              </label>
+            </div>
+          </span>
+          
+  <span class="input-span">
+    <label for="waste-bags" class="label">Number of Bags to be Recycled</label>
+    <input type="number" name="waste-bags" id="waste-bags" min="1" />
+  </span>
        
         <button id="completeButton" class="altButton">Complete Request</button>
 
       </form>
     </section>
-    <script src="../Logic/schedule.js"></script>
+    <!-- <script src="../Logic/schedule.js"></script> -->
   </main>
  
 </html>

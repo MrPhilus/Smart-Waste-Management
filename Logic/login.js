@@ -6,13 +6,14 @@ const emailInput = document.getElementById("email"),
 
 // Handling LogIn
 const tryLogIn = (e) => {
+  console.log("clicked");
   e.preventDefault();
 
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
   var raw = JSON.stringify({
-    phoneNumber: emailInput.value,
+    email: emailInput.value,
     password: passwordInput.value,
   });
 
@@ -27,44 +28,15 @@ const tryLogIn = (e) => {
     "http://ecoguard.us-east-1.elasticbeanstalk.com/api/v1/auth/login",
     requestOptions
   )
-    .then((response) => response.json())
+    .then((response) => response.text())
     .then((result) => {
+      const data = JSON.parse(result);
+      console.log(data);
       sessionStorage.setItem("isLoggedIn", result.token);
-      window.location = "../Pages/services.html";
+      data.token
+        ? (window.location = "../Pages/services.html")
+        : console.log("Check details");
     })
     .catch((error) => console.log("error", error));
 };
 login.addEventListener("click", tryLogIn);
-
-// Handling SignUp
-const trySignUp = (e) => {
-  e.preventDefault();
-
-  var myHeaders = new Headers();
-  myHeaders.append("Content-Type", "application/json");
-
-  var raw = JSON.stringify({
-    email: emailInput.value,
-    phoneNumber: phoneNumInput.value,
-    password: passwordInput.value,
-  });
-
-  var requestOptions = {
-    method: "POST",
-    headers: myHeaders,
-    body: raw,
-    redirect: "follow",
-  };
-
-  fetch(
-    "http://ecoguard.us-east-1.elasticbeanstalk.com/api/v1/auth/signup",
-    requestOptions
-  )
-    .then((response) => response.json())
-    .then((result) => {
-      console.log(result);
-      window.location = "../Pages/otp.html";
-    })
-    .catch((error) => console.log("error", error));
-};
-signup.addEventListener("click", trySignUp);

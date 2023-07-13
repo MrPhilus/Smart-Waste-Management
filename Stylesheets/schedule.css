@@ -42,3 +42,32 @@ button:active {
   transform: translateY(5px);
   box-shadow: 0px 0px 0px 0px #5b5b5b;
 }
+
+.radioButtons {
+  display: flex;
+  align-items: center;
+}
+
+.radioButtons label {
+  margin: auto;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+}
+select {
+  text-align: center;
+  font-weight: 600;
+  width: 5rem;
+}
+option {
+  font-weight: 600;
+}
+
+.input-span .wasteType {
+  display: flex;
+  /* gap: 10px; */
+  align-items: center;
+  justify-content: space-around;
+}

@@ -44,7 +44,6 @@
             id="tel"
             pattern="{1}[0-9]{3}[0-9]{10}"
             placeholder="234XXXXXXXXXX"
-            required
           />
         </span>
 
@@ -59,12 +58,14 @@
         /></span>
         <span class="span"
           >Already have an account?
-          <a href="../Pages/login.html">Log In</a></span
+          <a class="topLink" href="../Pages/login.html">Log In</a></span
         >
 
-        <button id="signUp" class="submit">Sign Up</button>
+        <a href="../Pages/otp.html"
+          ><button id="signUp" class="submit">Sign Up</button></a
+        >
       </form>
     </section>
   </main>
-  <script src="../Logic/forms.js"></script>
+  <script src="../Logic/signUp.js"></script>
 </html>

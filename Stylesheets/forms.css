@@ -47,6 +47,7 @@ form {
 }
 
 form input[type="text"],
+form input[type="number"],
 form input[type="time"],
 form input[type="week"],
 form input[type="password"],
@@ -63,6 +64,7 @@ form input[type="tel"] {
 }
 
 form input[type="text"]:focus,
+form input[type="number"]:focus,
 form input[type="time"]:focus,
 form input[type="week"]:focus,
 form input[type="password"]:focus,
@@ -109,4 +111,13 @@ form a {
 }
 .logo {
   margin: 1.5rem;
+}
+
+.topLink {
+  color: #7ed957;
+}
+.topLink:hover {
+  color: #628c23;
+  text-decoration: underline;
+  font-weight: bolder;
 }

@@ -12,6 +12,14 @@ disposalButton.addEventListener("click", function redirect() {
   }
 });
 
+recycleButton.addEventListener("click", function redirect() {
+  if (checkStatus()) {
+    window.location = "../Pages/recycle.html";
+  } else {
+    window.location = "../Pages/login.html";
+  }
+});
+
 if (checkStatus()) {
   logStatus.innerText = "Log Out";
 } else {
