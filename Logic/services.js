@@ -6,16 +6,18 @@ const logStatus = document.getElementById("logStatus"),
 
 disposalButton.addEventListener("click", function redirect() {
   if (checkStatus()) {
-    window.location = "./Schedule.html";
+    window.location = "../Pages/schedule.html";
   } else {
-    window.location = "./Forms.html";
+    window.location = "../Pages/login.html";
   }
 });
+
 if (checkStatus()) {
   logStatus.innerText = "Log Out";
 } else {
   logStatus.innerText = "Log In";
 }
+
 logStatus.addEventListener("click", () => {
   sessionStorage.clear();
 });

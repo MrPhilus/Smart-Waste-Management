@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="forms.css" />
+    <link rel="stylesheet" href="../Stylesheets/forms.css" />
     <script
       src="https://kit.fontawesome.com/8b463f7cca.js"
       crossorigin="anonymous"
@@ -12,10 +12,10 @@
   </head>
   <header>
     <div class="navLogo">
-      <a href="./index.html"
+      <a href="../Pages/index.html"
         ><img
           class="logo"
-          src="Assets/EcoGuard Logo.png"
+          src="../Assets/EcoGuard Logo.png"
           alt=""
           width="70rem"
           title="Home"
@@ -24,7 +24,7 @@
   </header>
   <main>
     <section class="formImage">
-      <img src="Assets/28127401.jpg" alt="" width="500rem" />
+      <img src="../Assets/28127401.jpg" alt="" width="500rem" />
     </section>
     <section class="formContainer">
       <form class="form">
@@ -58,12 +58,13 @@
           <input type="password" name="password" id="passWord"
         /></span>
         <span class="span"
-          >Already have an account? <a href="Forms.html">Log In</a></span
+          >Already have an account?
+          <a href="../Pages/login.html">Log In</a></span
         >
 
-        <a href="Forms.html"><button class="submit">Sign Up</button></a>
+        <button id="signUp" class="submit">Sign Up</button>
       </form>
     </section>
   </main>
-  <script src="script.js"></script>
+  <script src="../Logic/forms.js"></script>
 </html>

@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="forms.css" />
-    <link rel="stylesheet" href="services.css" />
-    <link rel="stylesheet" href="Schedule.css" />
+    <link rel="stylesheet" href="../Stylesheets/forms.css" />
+    <link rel="stylesheet" href="../Stylesheets/services.css" />
+    <link rel="stylesheet" href="../Stylesheets/schedule.css" />
     <script
       src="https://kit.fontawesome.com/8b463f7cca.js"
       crossorigin="anonymous"
@@ -17,13 +17,13 @@
       <a href="./index.html"
         ><img
           class="logo"
-          src="Assets/EcoGuard Logo.png"
+          src="../Assets/EcoGuard Logo.png"
           alt=""
           width="70rem"
           title="Home"
       /></a>
     </div>
-    <a href="./services.html"><button class="altButton">Services</button></a>
+    <a class="topLink" href="../Pages/services.html"><h2>SERVICES</h2></a>
     <div class="navItems">
       <div class="dropdown">
         <i
@@ -34,7 +34,7 @@
         <div class="dropdown-content">
           <a href="#">Profile</a>
           <a href="#">Settings</a>
-          <a id="logStatus" href="./Forms.html">Log In</a>
+          <a id="logStatus" href="../Pages/login.html">Log In</a>
         </div>
       </div>
   </header>
@@ -42,7 +42,7 @@
     <section class="formContainer">
       <article class="scheduleTitle">
         <h1>Pick-Up Request</h1>
-        <img src="./Assets/garbage-truck-in-green-color-with-trash-bag-vector-46239142-removebg-preview.png" alt="">
+        <img src="../Assets/garbage-truck-in-green-color-with-trash-bag-vector-46239142-removebg-preview.png" alt="">
         <h3>Pick a date and time convenient for you</h3>
       </article>
       <form class="form">
@@ -64,11 +64,39 @@
           <label for="time" class="label">Pick-Up Day</label>
           <input type="text" name="time" id="time"
         />Pick-Up Hours are 8 AM to 5PM</span>
+
+        <span class="input-span">
+          <label class="label">Request Bin</label>
+          <div>
+            <label for="request-yes">
+              <input type="radio" name="request-bin" id="request-yes" value="yes" onclick="showQuantityField()" /> Yes
+            </label>
+            <label for="request-no">
+              <input type="radio" name="request-bin" id="request-no" value="no" onclick="hideQuantityField()" /> No
+            </label>
+          </div>
+        </span>
+         
+    <span class="input-span" id="quantity-field" style="display: none;">
+      <label for="quantity" class="label">Quantity</label>
+      <select name="quantity" id="quantity">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </span>
        
        
         <button class="altButton">Complete Request</button>
 
       </form>
     </section>
+    <script>
+      function showOrHideQuantityField(show) {
+        var quantityField = document.getElementById("quantity-field");
+        quantityField.style.display = show ? "block" : "none";
+      }
+    </script>
   </main>
+ 
 </html>

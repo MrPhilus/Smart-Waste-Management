@@ -15,6 +15,15 @@
   justify-content: center;
 }
 
+.topLink {
+  color: #7ed957;
+}
+.topLink:hover {
+  color: #628c23;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
 .altButton {
   border: none;
   outline: none;
