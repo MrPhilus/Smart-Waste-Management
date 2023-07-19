@@ -12,7 +12,7 @@ const trySignUp = (e) => {
   var raw = JSON.stringify({
     email: emailInput.value,
     phoneNumber: phoneNumInput.value,
-    password: passwordInput.value,
+    password: escape(passwordInput.value),
   });
 
   var requestOptions = {
@@ -38,3 +38,8 @@ const trySignUp = (e) => {
     .catch((error) => console.log("error", error));
 };
 signup.addEventListener("click", trySignUp);
+
+function escape(str) {
+  // Escape all special characters that could be interpreted as code.
+  return str.replace(/[&;"'<>\/\\|`]/g, "\\$&");
+}
